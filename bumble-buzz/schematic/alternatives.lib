@@ -1,0 +1,13 @@
+.model BC550C  NPN (Is=7.049f Xti=3 Eg=1.11 Vaf=23.89 Bf=493.2 Ise=99.2f Ne=1.829  Ikf=.1542 Nk=.6339 Xtb=1.5 Br=2.886 Isc=7.371p Nc=1.508 Ikr=5.426 Rc=1.175 Cjc=5.5p   Mjc=.3132 Vjc=.4924 Fc=.5 Cje=11.5p Mje=.6558 Vje=.5 Tr=10n   Tf=420.3p  Itf=1.374     Xtf=39.42 Vtf=10       Vceo=30  Icrating=100m mfg=Philips)
+.model 2N2222A NPN (Is=14.34f Xti=3 Eg=1.11 Vaf=74.03 Bf=255.9 Ne=1.307 Ise=14.34f Ikf=.2847          Xtb=1.5 Br=6.092 Nc=2 Isc=0 Ikr=0 Rc=1                  Cjc=7.306p Mjc=.3416 Vjc=.75 Fc=.5 Cje=22.01p Mje=.377 Vje=.75 Tr=46.91n Tf=411.1p  Itf=.6Vtf=1.7 Xtf=3 Rb=10            Vceo=40  Icrating=800m mfg=Fairchild)
+.model 2N2222_ORIG  NPN (IS=1E-14  VAF=100   BF=200   IKF=0.3   XTB=1.5 BR=3                                            CJC=8E-12 CJE=25E-12 TR=100E-9                                           TF=400E-12 ITF=1 VTF=2   XTF=3 RB=10 RC=.3 RE=.2 Vceo=30 Icrating=800m mfg=Philips)
+
+
+.model mpsa18	NPN(Is=33.58f Xti=3 Eg=1.11 Vaf=100 Bf=2.365K Ne=1.579
++		Ise=166.7f Ikf=.1172 Xtb=1.5 Br=5.774 Nc=2 Isc=0 Ikr=0 Rc=1
++		Cjc=4.948p Mjc=.4109 Vjc=.75 Fc=.5 Cje=7.547p Mje=.3765 Vje=.75
++		Tr=800.3p Tf=310.1p Itf=.6 Vtf=6 Xtf=35 Rb=10)
+*		Motorola	pid=MPSA18	case=TO92
+*		88-09-14 bam	creation
+*$
+.model selected  NPN (Is=7.049f Xti=3 Eg=1.11 Vaf=23.89 Bf=493.2 Ise=99.2f Ne=1.829  Ikf=.1542 Nk=.6339 Xtb=1.5 Br=2.886 Isc=7.371p Nc=1.508 Ikr=5.426 Rc=1.175 Cjc=5.5p   Mjc=.3132 Vjc=.4924 Fc=.5 Cje=11.5p Mje=.6558 Vje=.5 Tr=10n   Tf=420.3p  Itf=1.374     Xtf=39.42 Vtf=10       Vceo=30  Icrating=100m mfg=Philips)
