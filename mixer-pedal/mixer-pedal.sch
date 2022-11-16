@@ -1,0 +1,1038 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP_Small C1
+U 1 1 61B0AA70
+P 1500 1500
+F 0 "C1" V 1275 1500 50  0000 C CNN
+F 1 "1uF" V 1366 1500 50  0000 C CNN
+F 2 "" H 1500 1500 50  0001 C CNN
+F 3 "~" H 1500 1500 50  0001 C CNN
+	1    1500 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 61B0D105
+P 1800 1300
+F 0 "R4" H 1859 1346 50  0000 L CNN
+F 1 "1meg" H 1859 1255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1800 1300 50  0001 C CNN
+F 3 "~" H 1800 1300 50  0001 C CNN
+	1    1800 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 1100 1    50   Input ~ 0
++4.5V
+Wire Wire Line
+	1800 1100 1800 1200
+Wire Wire Line
+	1800 1400 1800 1500
+Wire Wire Line
+	1800 1500 2000 1500
+Wire Wire Line
+	1600 1500 1800 1500
+Connection ~ 1800 1500
+Wire Wire Line
+	2000 1700 1950 1700
+Wire Wire Line
+	2700 1600 2600 1600
+$Comp
+L Device:R_Small R1
+U 1 1 61B17C59
+P 1300 1700
+F 0 "R1" H 1359 1746 50  0000 L CNN
+F 1 "2.2meg" H 1359 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1300 1700 50  0001 C CNN
+F 3 "~" H 1300 1700 50  0001 C CNN
+	1    1300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 61B18A72
+P 1300 2000
+F 0 "#PWR05" H 1300 1750 50  0001 C CNN
+F 1 "GND" H 1305 1827 50  0000 C CNN
+F 2 "" H 1300 2000 50  0001 C CNN
+F 3 "" H 1300 2000 50  0001 C CNN
+	1    1300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1600 1300 1500
+Wire Wire Line
+	1300 1500 1400 1500
+Wire Wire Line
+	1300 1800 1300 2000
+$Comp
+L Connector:AudioJack3_Switch J1
+U 1 1 61B1AD87
+P 850 1300
+F 0 "J1" H 832 1725 50  0000 C CNN
+F 1 "AudioJack3_Switch" H 832 1634 50  0000 C CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal" H 850 1300 50  0001 C CNN
+F 3 "~" H 850 1300 50  0001 C CNN
+F 4 "J" H 850 1300 50  0001 C CNN "Spice_Primitive"
+F 5 "AudioJack3_Switch" H 850 1300 50  0001 C CNN "Spice_Model"
+F 6 "N" H 850 1300 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    850  1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1500 1300 1500
+Connection ~ 1300 1500
+Wire Wire Line
+	1050 1100 1200 1100
+Wire Wire Line
+	1200 1100 1200 1150
+$Comp
+L power:GND #PWR01
+U 1 1 61B1ED25
+P 1200 1150
+F 0 "#PWR01" H 1200 900 50  0001 C CNN
+F 1 "GND" H 1205 977 50  0000 C CNN
+F 2 "" H 1200 1150 50  0001 C CNN
+F 3 "" H 1200 1150 50  0001 C CNN
+	1    1200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 61B76D5C
+P 4000 6150
+F 0 "R10" H 4059 6196 50  0000 L CNN
+F 1 "22k" H 4059 6105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4000 6150 50  0001 C CNN
+F 3 "~" H 4000 6150 50  0001 C CNN
+	1    4000 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 61B77AA7
+P 4000 6700
+F 0 "R11" H 4059 6746 50  0000 L CNN
+F 1 "22k" H 4059 6655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4000 6700 50  0001 C CNN
+F 3 "~" H 4000 6700 50  0001 C CNN
+	1    4000 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 5900 1    50   Input ~ 0
+9V
+Wire Wire Line
+	4000 5900 4000 6050
+Wire Wire Line
+	4000 6900 4000 6800
+Wire Wire Line
+	5300 6050 5300 6500
+$Comp
+L Device:CP_Small C5
+U 1 1 61B81347
+P 5300 6650
+F 0 "C5" H 5388 6696 50  0000 L CNN
+F 1 "1uF" H 5388 6605 50  0000 L CNN
+F 2 "" H 5300 6650 50  0001 C CNN
+F 3 "~" H 5300 6650 50  0001 C CNN
+	1    5300 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6750 5300 6850
+Text GLabel 5300 6050 1    50   Input ~ 0
++4.5V
+Wire Wire Line
+	1950 2200 2700 2200
+Wire Wire Line
+	1950 1700 1950 2200
+Wire Wire Line
+	2700 1600 2700 2200
+$Comp
+L power:GND #PWR015
+U 1 1 61B91B26
+P 5300 6850
+F 0 "#PWR015" H 5300 6600 50  0001 C CNN
+F 1 "GND" H 5305 6677 50  0000 C CNN
+F 2 "" H 5300 6850 50  0001 C CNN
+F 3 "" H 5300 6850 50  0001 C CNN
+	1    5300 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 61B929BA
+P 4000 6900
+F 0 "#PWR014" H 4000 6650 50  0001 C CNN
+F 1 "GND" H 4005 6727 50  0000 C CNN
+F 2 "" H 4000 6900 50  0001 C CNN
+F 3 "" H 4000 6900 50  0001 C CNN
+	1    4000 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 61B1550C
+P 3300 2000
+F 0 "#PWR010" H 3300 1750 50  0001 C CNN
+F 1 "GND" H 3305 1827 50  0000 C CNN
+F 2 "" H 3300 2000 50  0001 C CNN
+F 3 "" H 3300 2000 50  0001 C CNN
+	1    3300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1900 3300 2000
+Wire Wire Line
+	2750 7000 2750 7050
+$Comp
+L power:GND #PWR016
+U 1 1 61BFA6C7
+P 2750 7050
+F 0 "#PWR016" H 2750 6800 50  0001 C CNN
+F 1 "GND" H 2755 6877 50  0000 C CNN
+F 2 "" H 2750 7050 50  0001 C CNN
+F 3 "" H 2750 7050 50  0001 C CNN
+	1    2750 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 1 1 61C35965
+P 2300 1600
+F 0 "U1" H 2300 1967 50  0000 C CNN
+F 1 "TL074" H 2300 1876 50  0000 C CNN
+F 2 "" H 2250 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2350 1800 50  0001 C CNN
+F 4 "X" H 2300 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "TL074" H 2300 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2300 1600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "3 2 4 11 1" H 2300 1600 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "TL074.301" H 2300 1600 50  0001 C CNN "Spice_Lib_File"
+	1    2300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C2
+U 1 1 61B3699A
+P 1500 3100
+F 0 "C2" V 1275 3100 50  0000 C CNN
+F 1 "1uF" V 1366 3100 50  0000 C CNN
+F 2 "" H 1500 3100 50  0001 C CNN
+F 3 "~" H 1500 3100 50  0001 C CNN
+	1    1500 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 61B369A0
+P 1800 2900
+F 0 "R5" H 1859 2946 50  0000 L CNN
+F 1 "1meg" H 1859 2855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1800 2900 50  0001 C CNN
+F 3 "~" H 1800 2900 50  0001 C CNN
+	1    1800 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 2700 1    50   Input ~ 0
++4.5V
+Wire Wire Line
+	1800 2700 1800 2800
+Wire Wire Line
+	1800 3000 1800 3100
+Wire Wire Line
+	1800 3100 2000 3100
+Connection ~ 1800 3100
+Wire Wire Line
+	1600 3100 1800 3100
+Wire Wire Line
+	2000 3300 1950 3300
+Wire Wire Line
+	1950 3300 1950 3500
+Wire Wire Line
+	1950 3500 2700 3500
+Wire Wire Line
+	2700 3500 2700 3200
+Wire Wire Line
+	2700 3200 2600 3200
+$Comp
+L power:GND #PWR011
+U 1 1 61B369BA
+P 3300 3600
+F 0 "#PWR011" H 3300 3350 50  0001 C CNN
+F 1 "GND" H 3305 3427 50  0000 C CNN
+F 2 "" H 3300 3600 50  0001 C CNN
+F 3 "" H 3300 3600 50  0001 C CNN
+	1    3300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3500 3300 3600
+$Comp
+L Device:R_Small R2
+U 1 1 61B369C8
+P 1300 3300
+F 0 "R2" H 1359 3346 50  0000 L CNN
+F 1 "2.2meg" H 1359 3255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1300 3300 50  0001 C CNN
+F 3 "~" H 1300 3300 50  0001 C CNN
+	1    1300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 61B369CE
+P 1300 3600
+F 0 "#PWR06" H 1300 3350 50  0001 C CNN
+F 1 "GND" H 1305 3427 50  0000 C CNN
+F 2 "" H 1300 3600 50  0001 C CNN
+F 3 "" H 1300 3600 50  0001 C CNN
+	1    1300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3200 1300 3100
+Wire Wire Line
+	1300 3100 1400 3100
+Connection ~ 1300 3100
+Wire Wire Line
+	1050 3100 1300 3100
+Wire Wire Line
+	1300 3400 1300 3600
+$Comp
+L Connector:AudioJack3_Switch J2
+U 1 1 61B369D7
+P 850 2900
+F 0 "J2" H 832 3325 50  0000 C CNN
+F 1 "AudioJack3_Switch" H 832 3234 50  0000 C CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal" H 850 2900 50  0001 C CNN
+F 3 "~" H 850 2900 50  0001 C CNN
+F 4 "J" H 850 2900 50  0001 C CNN "Spice_Primitive"
+F 5 "AudioJack3_Switch" H 850 2900 50  0001 C CNN "Spice_Model"
+F 6 "N" H 850 2900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    850  2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2700 1200 2700
+Wire Wire Line
+	1200 2700 1200 2750
+$Comp
+L power:GND #PWR02
+U 1 1 61B369E1
+P 1200 2750
+F 0 "#PWR02" H 1200 2500 50  0001 C CNN
+F 1 "GND" H 1205 2577 50  0000 C CNN
+F 2 "" H 1200 2750 50  0001 C CNN
+F 3 "" H 1200 2750 50  0001 C CNN
+	1    1200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C3
+U 1 1 61B3FF6A
+P 1500 4800
+F 0 "C3" V 1275 4800 50  0000 C CNN
+F 1 "1uF" V 1366 4800 50  0000 C CNN
+F 2 "" H 1500 4800 50  0001 C CNN
+F 3 "~" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 61B3FF70
+P 1800 4600
+F 0 "R6" H 1859 4646 50  0000 L CNN
+F 1 "1meg" H 1859 4555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1800 4600 50  0001 C CNN
+F 3 "~" H 1800 4600 50  0001 C CNN
+	1    1800 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 4400 1    50   Input ~ 0
++4.5V
+Wire Wire Line
+	1800 4400 1800 4500
+Wire Wire Line
+	1800 4700 1800 4800
+Wire Wire Line
+	1800 4800 2000 4800
+Connection ~ 1800 4800
+Wire Wire Line
+	1600 4800 1800 4800
+Wire Wire Line
+	2000 5000 1950 5000
+Wire Wire Line
+	1950 5000 1950 5200
+Wire Wire Line
+	1950 5200 2700 5200
+Wire Wire Line
+	2700 5200 2700 4900
+Wire Wire Line
+	2700 4900 2600 4900
+Wire Wire Line
+	3300 5200 3300 5300
+$Comp
+L Device:R_Small R3
+U 1 1 61B3FF98
+P 1300 5000
+F 0 "R3" H 1359 5046 50  0000 L CNN
+F 1 "2.2meg" H 1359 4955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1300 5000 50  0001 C CNN
+F 3 "~" H 1300 5000 50  0001 C CNN
+	1    1300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4900 1300 4800
+Wire Wire Line
+	1300 4800 1400 4800
+Connection ~ 1300 4800
+Wire Wire Line
+	1050 4800 1300 4800
+Wire Wire Line
+	1300 5100 1300 5300
+$Comp
+L Connector:AudioJack3_Switch J3
+U 1 1 61B3FFA7
+P 850 4600
+F 0 "J3" H 832 5025 50  0000 C CNN
+F 1 "AudioJack3_Switch" H 832 4934 50  0000 C CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal" H 850 4600 50  0001 C CNN
+F 3 "~" H 850 4600 50  0001 C CNN
+F 4 "J" H 850 4600 50  0001 C CNN "Spice_Primitive"
+F 5 "AudioJack3_Switch" H 850 4600 50  0001 C CNN "Spice_Model"
+F 6 "N" H 850 4600 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    850  4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4400 1200 4400
+Wire Wire Line
+	1200 4400 1200 4450
+$Comp
+L power:GND #PWR03
+U 1 1 61B3FFB1
+P 1200 4450
+F 0 "#PWR03" H 1200 4200 50  0001 C CNN
+F 1 "GND" H 1205 4277 50  0000 C CNN
+F 2 "" H 1200 4450 50  0001 C CNN
+F 3 "" H 1200 4450 50  0001 C CNN
+	1    1200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 61B944C3
+P 3300 5300
+F 0 "#PWR012" H 3300 5050 50  0001 C CNN
+F 1 "GND" H 3305 5127 50  0000 C CNN
+F 2 "" H 3300 5300 50  0001 C CNN
+F 3 "" H 3300 5300 50  0001 C CNN
+	1    3300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 61B953FA
+P 1300 5300
+F 0 "#PWR07" H 1300 5050 50  0001 C CNN
+F 1 "GND" H 1305 5127 50  0000 C CNN
+F 2 "" H 1300 5300 50  0001 C CNN
+F 3 "" H 1300 5300 50  0001 C CNN
+	1    1300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 5 1 61CE0BAB
+P 2850 6700
+F 0 "U1" H 2808 6746 50  0000 L CNN
+F 1 "TL074" H 2808 6655 50  0000 L CNN
+F 2 "" H 2800 6800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2900 6900 50  0001 C CNN
+F 4 "R" H 2850 6700 50  0001 C CNN "Spice_Primitive"
+F 5 "10" H 2850 6700 50  0001 C CNN "Spice_Model"
+F 6 "N" H 2850 6700 50  0001 C CNN "Spice_Netlist_Enabled"
+	5    2850 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C7
+U 1 1 61CE26F9
+P 3000 1600
+F 0 "C7" V 2775 1600 50  0000 C CNN
+F 1 "2.2uF" V 2866 1600 50  0000 C CNN
+F 2 "" H 3000 1600 50  0001 C CNN
+F 3 "~" H 3000 1600 50  0001 C CNN
+	1    3000 1600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2700 1600 2900 1600
+Connection ~ 2700 1600
+Wire Wire Line
+	3100 1600 3300 1600
+Wire Wire Line
+	3300 4900 3300 5000
+Wire Wire Line
+	3300 3200 3300 3300
+Wire Wire Line
+	3300 1600 3300 1700
+$Comp
+L Device:R_Small R7
+U 1 1 61C6F7BC
+P 4100 5100
+F 0 "R7" V 3904 5100 50  0000 C CNN
+F 1 "100k" V 3995 5100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4100 5100 50  0001 C CNN
+F 3 "~" H 4100 5100 50  0001 C CNN
+	1    4100 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 61C6ED54
+P 4150 3400
+F 0 "R9" V 3954 3400 50  0000 C CNN
+F 1 "100k" V 4045 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4150 3400 50  0001 C CNN
+F 3 "~" H 4150 3400 50  0001 C CNN
+	1    4150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 61B51D00
+P 5300 2550
+F 0 "C4" V 5529 2550 50  0000 C CNN
+F 1 "22p" V 5438 2550 50  0000 C CNN
+F 2 "" H 5300 2550 50  0001 C CNN
+F 3 "~" H 5300 2550 50  0001 C CNN
+F 4 "C" H 5300 2550 50  0001 C CNN "Spice_Primitive"
+F 5 "22p" H 5300 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5300 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5300 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 61B172B1
+P 4150 1800
+F 0 "R8" V 3954 1800 50  0000 C CNN
+F 1 "100k" V 4045 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4150 1800 50  0001 C CNN
+F 3 "~" H 4150 1800 50  0001 C CNN
+	1    4150 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 3400 4350 3400
+Wire Wire Line
+	3400 3400 3500 3400
+$Comp
+L Device:R_POT_Small RV2
+U 1 1 61C4C2A6
+P 3300 3400
+F 0 "RV2" H 3241 3446 50  0000 R CNN
+F 1 "100k" H 3241 3355 50  0000 R CNN
+F 2 "" H 3300 3400 50  0001 C CNN
+F 3 "~" H 3300 3400 50  0001 C CNN
+	1    3300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_Small RV3
+U 1 1 61C4CAF5
+P 3300 5100
+F 0 "RV3" H 3241 5146 50  0000 R CNN
+F 1 "100k" H 3241 5055 50  0000 R CNN
+F 2 "" H 3300 5100 50  0001 C CNN
+F 3 "~" H 3300 5100 50  0001 C CNN
+	1    3300 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5100 3450 5100
+Wire Wire Line
+	4200 5100 4350 5100
+Wire Wire Line
+	4350 5100 4350 3400
+$Comp
+L Device:R_POT_Small RV1
+U 1 1 61C42CFD
+P 3300 1800
+F 0 "RV1" H 3241 1846 50  0000 R CNN
+F 1 "100k" H 3241 1755 50  0000 R CNN
+F 2 "" H 3300 1800 50  0001 C CNN
+F 3 "~" H 3300 1800 50  0001 C CNN
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 4850 3700 3    50   Input ~ 0
++4.5V
+Wire Wire Line
+	3400 1800 3500 1800
+$Comp
+L Device:R_Small R12
+U 1 1 61B4DF38
+P 5300 2900
+F 0 "R12" V 5104 2900 50  0000 C CNN
+F 1 "100k" V 5195 2900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5300 2900 50  0001 C CNN
+F 3 "~" H 5300 2900 50  0001 C CNN
+F 4 "R" H 5300 2900 50  0001 C CNN "Spice_Primitive"
+F 5 "100k" H 5300 2900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5300 2900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5300 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 2900 4850 2900
+Connection ~ 4850 2900
+Wire Wire Line
+	4850 2900 4850 3400
+Wire Wire Line
+	4850 2550 4850 2900
+Connection ~ 4850 3400
+Wire Wire Line
+	4850 3400 4950 3400
+Wire Wire Line
+	4350 3400 4850 3400
+Wire Wire Line
+	5400 2900 5750 2900
+Connection ~ 5750 2900
+Wire Wire Line
+	5750 2900 5750 3500
+Wire Wire Line
+	5750 2550 5750 2900
+Wire Wire Line
+	5750 3500 5550 3500
+Wire Wire Line
+	5200 2550 4850 2550
+Wire Wire Line
+	5400 2550 5750 2550
+Connection ~ 4350 3400
+Wire Wire Line
+	4350 1800 4350 3400
+Wire Wire Line
+	4950 3600 4850 3600
+Wire Wire Line
+	4850 3600 4850 3700
+Wire Wire Line
+	6500 3600 6550 3600
+$Comp
+L Device:CP_Small C6
+U 1 1 61B5D06A
+P 7150 3600
+F 0 "C6" V 7375 3600 50  0000 C CNN
+F 1 "10uF" V 7284 3600 50  0000 C CNN
+F 2 "" H 7150 3600 50  0001 C CNN
+F 3 "~" H 7150 3600 50  0001 C CNN
+	1    7150 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 61B5EB66
+P 6700 3600
+F 0 "R13" V 6504 3600 50  0000 C CNN
+F 1 "1k" V 6595 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6700 3600 50  0001 C CNN
+F 3 "~" H 6700 3600 50  0001 C CNN
+	1    6700 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 3600 7050 3600
+$Comp
+L Device:R_Small R14
+U 1 1 61B6114A
+P 7450 3800
+F 0 "R14" H 7509 3846 50  0000 L CNN
+F 1 "2.2meg" H 7509 3755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7450 3800 50  0001 C CNN
+F 3 "~" H 7450 3800 50  0001 C CNN
+	1    7450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3600 7450 3600
+Wire Wire Line
+	7450 3600 7450 3700
+Wire Wire Line
+	7450 4000 7450 3900
+$Comp
+L power:GND #PWR017
+U 1 1 61BA27AD
+P 7450 4000
+F 0 "#PWR017" H 7450 3750 50  0001 C CNN
+F 1 "GND" H 7455 3827 50  0000 C CNN
+F 2 "" H 7450 4000 50  0001 C CNN
+F 3 "" H 7450 4000 50  0001 C CNN
+	1    7450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1800 4350 1800
+$Comp
+L Amplifier_Operational:TL074 U1
+U 2 1 61D0C3D6
+P 2300 3200
+F 0 "U1" H 2300 3567 50  0000 C CNN
+F 1 "TL074" H 2300 3476 50  0000 C CNN
+F 2 "" H 2250 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2350 3400 50  0001 C CNN
+	2    2300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 3 1 61D109D5
+P 2300 4900
+F 0 "U1" H 2300 5267 50  0000 C CNN
+F 1 "TL074" H 2300 5176 50  0000 C CNN
+F 2 "" H 2250 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2350 5100 50  0001 C CNN
+	3    2300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 4 1 61D123CC
+P 5250 3500
+F 0 "U1" H 5250 3867 50  0000 C CNN
+F 1 "TL074" H 5250 3776 50  0000 C CNN
+F 2 "" H 5200 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5300 3700 50  0001 C CNN
+	4    5250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C8
+U 1 1 61D1AA55
+P 3000 3200
+F 0 "C8" V 2775 3200 50  0000 C CNN
+F 1 "2.2uF" V 2866 3200 50  0000 C CNN
+F 2 "" H 3000 3200 50  0001 C CNN
+F 3 "~" H 3000 3200 50  0001 C CNN
+	1    3000 3200
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:CP_Small C9
+U 1 1 61D1B0A4
+P 3000 4900
+F 0 "C9" V 2775 4900 50  0000 C CNN
+F 1 "2.2uF" V 2866 4900 50  0000 C CNN
+F 2 "" H 3000 4900 50  0001 C CNN
+F 3 "~" H 3000 4900 50  0001 C CNN
+	1    3000 4900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2700 4900 2900 4900
+Connection ~ 2700 4900
+Wire Wire Line
+	3100 4900 3300 4900
+Wire Wire Line
+	2700 3200 2900 3200
+Connection ~ 2700 3200
+Wire Wire Line
+	3100 3200 3300 3200
+$Comp
+L Device:CP_Small C12
+U 1 1 61D25DA7
+P 3600 3400
+F 0 "C12" V 3375 3400 50  0000 C CNN
+F 1 "2.2uF" V 3466 3400 50  0000 C CNN
+F 2 "" H 3600 3400 50  0001 C CNN
+F 3 "~" H 3600 3400 50  0001 C CNN
+	1    3600 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP_Small C10
+U 1 1 61D267B4
+P 3550 5100
+F 0 "C10" V 3325 5100 50  0000 C CNN
+F 1 "2.2uF" V 3416 5100 50  0000 C CNN
+F 2 "" H 3550 5100 50  0001 C CNN
+F 3 "~" H 3550 5100 50  0001 C CNN
+	1    3550 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 1800 3750 1800
+Wire Wire Line
+	3650 5100 3700 5100
+Wire Wire Line
+	3750 1400 3750 1500
+Text GLabel 3750 1400 1    50   Input ~ 0
++4.5V
+$Comp
+L Device:R_Small R16
+U 1 1 61D2F9FE
+P 3750 1600
+F 0 "R16" H 3809 1646 50  0000 L CNN
+F 1 "1meg" H 3809 1555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3750 1600 50  0001 C CNN
+F 3 "~" H 3750 1600 50  0001 C CNN
+	1    3750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C11
+U 1 1 61D24DF3
+P 3600 1800
+F 0 "C11" V 3375 1800 50  0000 C CNN
+F 1 "2.2uF" V 3466 1800 50  0000 C CNN
+F 2 "" H 3600 1800 50  0001 C CNN
+F 3 "~" H 3600 1800 50  0001 C CNN
+	1    3600 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 3000 3750 3100
+Text GLabel 3750 3000 1    50   Input ~ 0
++4.5V
+$Comp
+L Device:R_Small R17
+U 1 1 61D35801
+P 3750 3200
+F 0 "R17" H 3809 3246 50  0000 L CNN
+F 1 "1meg" H 3809 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3750 3200 50  0001 C CNN
+F 3 "~" H 3750 3200 50  0001 C CNN
+	1    3750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4700 3700 4800
+Text GLabel 3700 4700 1    50   Input ~ 0
++4.5V
+$Comp
+L Device:R_Small R15
+U 1 1 61D3842F
+P 3700 4900
+F 0 "R15" H 3759 4946 50  0000 L CNN
+F 1 "1meg" H 3759 4855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3700 4900 50  0001 C CNN
+F 3 "~" H 3700 4900 50  0001 C CNN
+	1    3700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1700 3750 1800
+Connection ~ 3750 1800
+Wire Wire Line
+	3750 1800 4050 1800
+Wire Wire Line
+	3750 3300 3750 3400
+Wire Wire Line
+	3700 3400 3750 3400
+Connection ~ 3750 3400
+Wire Wire Line
+	3750 3400 4050 3400
+Wire Wire Line
+	3700 5000 3700 5100
+Connection ~ 3700 5100
+Wire Wire Line
+	3700 5100 4000 5100
+$Comp
+L Device:R_Small R?
+U 1 1 61D430B4
+P 1600 6300
+F 0 "R?" V 1404 6300 50  0000 C CNN
+F 1 "100" V 1495 6300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1600 6300 50  0001 C CNN
+F 3 "~" H 1600 6300 50  0001 C CNN
+	1    1600 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D?
+U 1 1 61D4547F
+P 1800 6700
+F 0 "D?" V 1754 6780 50  0000 L CNN
+F 1 "1N4007" V 1845 6780 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1800 6525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1800 6700 50  0001 C CNN
+	1    1800 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 61D46293
+P 2300 6700
+F 0 "C?" H 2388 6746 50  0000 L CNN
+F 1 "100uF" H 2388 6655 50  0000 L CNN
+F 2 "" H 2300 6700 50  0001 C CNN
+F 3 "~" H 2300 6700 50  0001 C CNN
+	1    2300 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D46CA2
+P 3200 6700
+F 0 "C?" V 3429 6700 50  0000 C CNN
+F 1 "100n" V 3338 6700 50  0000 C CNN
+F 2 "" H 3200 6700 50  0001 C CNN
+F 3 "~" H 3200 6700 50  0001 C CNN
+F 4 "C" H 3200 6700 50  0001 C CNN "Spice_Primitive"
+F 5 "22p" H 3200 6700 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3200 6700 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3200 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6300 3200 6600
+Wire Wire Line
+	2750 6300 2750 6400
+$Comp
+L power:GND #PWR?
+U 1 1 61D4E764
+P 3200 7050
+F 0 "#PWR?" H 3200 6800 50  0001 C CNN
+F 1 "GND" H 3205 6877 50  0000 C CNN
+F 2 "" H 3200 7050 50  0001 C CNN
+F 3 "" H 3200 7050 50  0001 C CNN
+	1    3200 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6800 3200 7050
+Wire Wire Line
+	1700 6300 1800 6300
+Wire Wire Line
+	2300 6300 2300 6600
+Wire Wire Line
+	1800 6300 1800 6550
+Connection ~ 1800 6300
+Wire Wire Line
+	1800 6300 2300 6300
+$Comp
+L power:GND #PWR?
+U 1 1 61D5BD00
+P 2300 7050
+F 0 "#PWR?" H 2300 6800 50  0001 C CNN
+F 1 "GND" H 2305 6877 50  0000 C CNN
+F 2 "" H 2300 7050 50  0001 C CNN
+F 3 "" H 2300 7050 50  0001 C CNN
+	1    2300 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D5CB70
+P 1800 7050
+F 0 "#PWR?" H 1800 6800 50  0001 C CNN
+F 1 "GND" H 1805 6877 50  0000 C CNN
+F 2 "" H 1800 7050 50  0001 C CNN
+F 3 "" H 1800 7050 50  0001 C CNN
+	1    1800 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7050 1800 6850
+Wire Wire Line
+	2300 7050 2300 6800
+Text GLabel 2300 6300 1    50   Input ~ 0
+9V
+Wire Wire Line
+	1500 6300 1350 6300
+Wire Wire Line
+	2300 6300 2750 6300
+Connection ~ 2300 6300
+Wire Wire Line
+	2750 6300 3200 6300
+Connection ~ 2750 6300
+$Comp
+L Amplifier_Operational:TL072 U?
+U 1 1 61DA21D8
+P 6200 3600
+F 0 "U?" H 6200 3967 50  0000 C CNN
+F 1 "TL072" H 6200 3876 50  0000 C CNN
+F 2 "" H 6200 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6200 3600 50  0001 C CNN
+	1    6200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3500 5750 3500
+Connection ~ 5750 3500
+Wire Wire Line
+	5900 3700 5750 3700
+Wire Wire Line
+	5750 3700 5750 4000
+Wire Wire Line
+	5750 4000 6550 4000
+Wire Wire Line
+	6550 4000 6550 3600
+Connection ~ 6550 3600
+Wire Wire Line
+	6550 3600 6600 3600
+$Comp
+L Device:C_Small C?
+U 1 1 61DCB0B5
+P 5600 6650
+F 0 "C?" V 5829 6650 50  0000 C CNN
+F 1 "100n" V 5738 6650 50  0000 C CNN
+F 2 "" H 5600 6650 50  0001 C CNN
+F 3 "~" H 5600 6650 50  0001 C CNN
+F 4 "C" H 5600 6650 50  0001 C CNN "Spice_Primitive"
+F 5 "22p" H 5600 6650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5600 6650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5600 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6250 4000 6400
+$Comp
+L Amplifier_Operational:TL072 U?
+U 2 1 61DD2141
+P 4750 6500
+F 0 "U?" H 4750 6867 50  0000 C CNN
+F 1 "TL072" H 4750 6776 50  0000 C CNN
+F 2 "" H 4750 6500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4750 6500 50  0001 C CNN
+	2    4750 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 6500 5100 6500
+Connection ~ 5300 6500
+Wire Wire Line
+	5300 6500 5300 6550
+Wire Wire Line
+	4450 6400 4000 6400
+Connection ~ 4000 6400
+Wire Wire Line
+	4000 6400 4000 6600
+Wire Wire Line
+	4450 6600 4350 6600
+Wire Wire Line
+	4350 6600 4350 6800
+Wire Wire Line
+	4350 6800 5100 6800
+Wire Wire Line
+	5100 6800 5100 6500
+Connection ~ 5100 6500
+Wire Wire Line
+	5100 6500 5300 6500
+$EndSCHEMATC
