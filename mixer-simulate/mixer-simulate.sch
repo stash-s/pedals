@@ -1,0 +1,521 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2500 1700 2400 1700
+Wire Wire Line
+	2400 1700 2400 2400
+Wire Wire Line
+	2400 2400 3200 2400
+Wire Wire Line
+	3200 2400 3200 1600
+Wire Wire Line
+	3200 1600 3100 1600
+$Comp
+L pspice:VSOURCE V1
+U 1 1 61BB1309
+P 1500 3250
+F 0 "V1" H 1728 3296 50  0000 L CNN
+F 1 "VSOURCE" H 1728 3205 50  0000 L CNN
+F 2 "" H 1500 3250 50  0001 C CNN
+F 3 "~" H 1500 3250 50  0001 C CNN
+F 4 "V" H 1500 3250 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 9" H 1500 3250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1500 3250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1500 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 2850 1    50   Input ~ 0
+9V
+Wire Wire Line
+	1500 2950 1500 2850
+Wire Wire Line
+	1500 3550 1500 3650
+$Comp
+L Device:R_Small R1
+U 1 1 61BB44CA
+P 2200 1500
+F 0 "R1" V 2004 1500 50  0000 C CNN
+F 1 "1k" V 2095 1500 50  0000 C CNN
+F 2 "" H 2200 1500 50  0001 C CNN
+F 3 "~" H 2200 1500 50  0001 C CNN
+	1    2200 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 61BB504D
+P 1850 1500
+F 0 "C1" V 1621 1500 50  0000 C CNN
+F 1 "220nF" V 1712 1500 50  0000 C CNN
+F 2 "" H 1850 1500 50  0001 C CNN
+F 3 "~" H 1850 1500 50  0001 C CNN
+	1    1850 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 1500 2500 1500
+Wire Wire Line
+	1950 1500 2000 1500
+$Comp
+L Device:R_Small R2
+U 1 1 61BB5FC9
+P 3750 2000
+F 0 "R2" H 3691 1954 50  0000 R CNN
+F 1 "95k" H 3691 2045 50  0000 R CNN
+F 2 "" H 3750 2000 50  0001 C CNN
+F 3 "~" H 3750 2000 50  0001 C CNN
+	1    3750 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 2200 3750 2100
+$Comp
+L pspice:VSOURCE V2
+U 1 1 61BB7618
+P 2450 3250
+F 0 "V2" H 2678 3296 50  0000 L CNN
+F 1 "VSOURCE" H 2678 3205 50  0000 L CNN
+F 2 "" H 2450 3250 50  0001 C CNN
+F 3 "~" H 2450 3250 50  0001 C CNN
+F 4 "V" H 2450 3250 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0 ac 1 sin(0 1 1k)" H 2450 3250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2450 3250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3650 2450 3550
+Text GLabel 2450 2850 1    50   Input ~ 0
+IN
+Wire Wire Line
+	2450 2850 2450 2950
+Text GLabel 1650 1500 0    50   Input ~ 0
+IN
+Wire Wire Line
+	1650 1500 1750 1500
+$Comp
+L power:GND #PWR02
+U 1 1 61BBAD3D
+P 2450 3650
+F 0 "#PWR02" H 2450 3400 50  0001 C CNN
+F 1 "GND" H 2455 3477 50  0000 C CNN
+F 2 "" H 2450 3650 50  0001 C CNN
+F 3 "" H 2450 3650 50  0001 C CNN
+	1    2450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 61BBBBB0
+P 1500 3650
+F 0 "#PWR01" H 1500 3400 50  0001 C CNN
+F 1 "GND" H 1505 3477 50  0000 C CNN
+F 2 "" H 1500 3650 50  0001 C CNN
+F 3 "" H 1500 3650 50  0001 C CNN
+	1    1500 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 1300 2    50   Input ~ 0
+OUT
+$Comp
+L Device:R_Small R4
+U 1 1 61BBCFE1
+P 3500 3200
+F 0 "R4" H 3441 3154 50  0000 R CNN
+F 1 "22k" H 3441 3245 50  0000 R CNN
+F 2 "" H 3500 3200 50  0001 C CNN
+F 3 "~" H 3500 3200 50  0001 C CNN
+	1    3500 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 61BBE0EE
+P 3500 3500
+F 0 "R5" H 3441 3454 50  0000 R CNN
+F 1 "22k" H 3441 3545 50  0000 R CNN
+F 2 "" H 3500 3500 50  0001 C CNN
+F 3 "~" H 3500 3500 50  0001 C CNN
+	1    3500 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 61BBE4F7
+P 3500 3650
+F 0 "#PWR05" H 3500 3400 50  0001 C CNN
+F 1 "GND" H 3505 3477 50  0000 C CNN
+F 2 "" H 3500 3650 50  0001 C CNN
+F 3 "" H 3500 3650 50  0001 C CNN
+	1    3500 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 3000 1    50   Input ~ 0
+9V
+Wire Wire Line
+	3500 3400 3500 3350
+Wire Wire Line
+	3500 3150 3500 3100
+Connection ~ 3500 3100
+Wire Wire Line
+	3500 3100 3500 3000
+Wire Wire Line
+	3500 3650 3500 3600
+Wire Wire Line
+	3500 3350 3850 3350
+Wire Wire Line
+	3850 3350 3850 3450
+Connection ~ 3500 3350
+Wire Wire Line
+	3500 3350 3500 3300
+$Comp
+L Device:C_Small C2
+U 1 1 61BBFAF5
+P 3850 3550
+F 0 "C2" H 3758 3504 50  0000 R CNN
+F 1 "220uF" H 3758 3595 50  0000 R CNN
+F 2 "" H 3850 3550 50  0001 C CNN
+F 3 "~" H 3850 3550 50  0001 C CNN
+	1    3850 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 61BC097B
+P 3850 3750
+F 0 "#PWR06" H 3850 3500 50  0001 C CNN
+F 1 "GND" H 3855 3577 50  0000 C CNN
+F 2 "" H 3850 3750 50  0001 C CNN
+F 3 "" H 3850 3750 50  0001 C CNN
+	1    3850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3750 3850 3650
+Text GLabel 3850 3350 1    50   Input ~ 0
+VREF
+$Comp
+L Device:R_Small R3
+U 1 1 61BC158D
+P 2000 1250
+F 0 "R3" H 1941 1204 50  0000 R CNN
+F 1 "1meg" H 1941 1295 50  0000 R CNN
+F 2 "" H 2000 1250 50  0001 C CNN
+F 3 "~" H 2000 1250 50  0001 C CNN
+	1    2000 1250
+	-1   0    0    1   
+$EndComp
+Text GLabel 2000 1050 1    50   Input ~ 0
+VREF
+Wire Wire Line
+	2000 1050 2000 1150
+Wire Wire Line
+	2000 1350 2000 1500
+Connection ~ 2000 1500
+Wire Wire Line
+	2000 1500 2100 1500
+$Comp
+L Amplifier_Operational:TL074 U1
+U 1 1 61BC439D
+P 5300 1700
+F 0 "U1" H 5300 2067 50  0000 C CNN
+F 1 "TL074" H 5300 1976 50  0000 C CNN
+F 2 "" H 5250 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5350 1900 50  0001 C CNN
+F 4 "X" H 5300 1700 50  0001 C CNN "Spice_Primitive"
+F 5 "TL074" H 5300 1700 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5300 1700 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "3 2 4 11 1" H 5300 1700 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "TL074.301" H 5300 1700 50  0001 C CNN "Spice_Lib_File"
+	1    5300 1700
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 5 1 61BC592F
+P 1950 4550
+F 0 "U1" H 1908 4596 50  0000 L CNN
+F 1 "TL074" H 1908 4505 50  0000 L CNN
+F 2 "" H 1900 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2000 4750 50  0001 C CNN
+	5    1950 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 4150 1    50   Input ~ 0
+9V
+$Comp
+L power:GND #PWR03
+U 1 1 61BC8771
+P 1850 4950
+F 0 "#PWR03" H 1850 4700 50  0001 C CNN
+F 1 "GND" H 1855 4777 50  0000 C CNN
+F 2 "" H 1850 4950 50  0001 C CNN
+F 3 "" H 1850 4950 50  0001 C CNN
+	1    1850 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4250 1850 4150
+Wire Wire Line
+	1850 4850 1850 4950
+$Comp
+L Amplifier_Operational:TL074 U2
+U 1 1 61C803CC
+P 2800 1600
+F 0 "U2" H 2800 1967 50  0000 C CNN
+F 1 "TL074" H 2800 1876 50  0000 C CNN
+F 2 "" H 2750 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2850 1800 50  0001 C CNN
+F 4 "X" H 2800 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "TL074" H 2800 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2800 1600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "3 2 4 11 1" H 2800 1600 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "TL074.301" H 2800 1600 50  0001 C CNN "Spice_Lib_File"
+	1    2800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 61C83A8A
+P 4700 1600
+F 0 "R6" H 4641 1554 50  0000 R CNN
+F 1 "100k" H 4641 1645 50  0000 R CNN
+F 2 "" H 4700 1600 50  0001 C CNN
+F 3 "~" H 4700 1600 50  0001 C CNN
+	1    4700 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 1600 4900 1600
+$Comp
+L Device:R_Small R8
+U 1 1 61C858F7
+P 5300 1300
+F 0 "R8" H 5241 1254 50  0000 R CNN
+F 1 "150k" H 5241 1345 50  0000 R CNN
+F 2 "" H 5300 1300 50  0001 C CNN
+F 3 "~" H 5300 1300 50  0001 C CNN
+	1    5300 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 1300 4900 1300
+Wire Wire Line
+	4900 1300 4900 1600
+Connection ~ 4900 1600
+Wire Wire Line
+	4900 1600 4800 1600
+Wire Wire Line
+	5400 1300 5700 1300
+Wire Wire Line
+	5700 1300 5700 1700
+Wire Wire Line
+	5700 1700 5600 1700
+$Comp
+L Device:R_Small R10
+U 1 1 61C871E9
+P 6150 1950
+F 0 "R10" H 6091 1904 50  0000 R CNN
+F 1 "100k" H 6091 1995 50  0000 R CNN
+F 2 "" H 6150 1950 50  0001 C CNN
+F 3 "~" H 6150 1950 50  0001 C CNN
+	1    6150 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 61C88A50
+P 5900 1700
+F 0 "R9" H 5841 1654 50  0000 R CNN
+F 1 "1k" H 5841 1745 50  0000 R CNN
+F 2 "" H 5900 1700 50  0001 C CNN
+F 3 "~" H 5900 1700 50  0001 C CNN
+	1    5900 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 1700 5700 1700
+Connection ~ 5700 1700
+$Comp
+L power:GND #PWR07
+U 1 1 61C89D1F
+P 6150 2200
+F 0 "#PWR07" H 6150 1950 50  0001 C CNN
+F 1 "GND" H 6155 2027 50  0000 C CNN
+F 2 "" H 6150 2200 50  0001 C CNN
+F 3 "" H 6150 2200 50  0001 C CNN
+	1    6150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2200 6150 2050
+Wire Wire Line
+	6150 1850 6150 1700
+Wire Wire Line
+	6150 1700 6000 1700
+Wire Wire Line
+	5000 1800 4900 1800
+Wire Wire Line
+	4900 1800 4900 1900
+$Comp
+L Amplifier_Operational:TL074 U2
+U 5 1 61C8F801
+P 2850 4600
+F 0 "U2" H 2808 4646 50  0000 L CNN
+F 1 "TL074" H 2808 4555 50  0000 L CNN
+F 2 "" H 2800 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2900 4800 50  0001 C CNN
+	5    2850 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 4200 1    50   Input ~ 0
+9V
+$Comp
+L power:GND #PWR08
+U 1 1 61C8F808
+P 2750 5000
+F 0 "#PWR08" H 2750 4750 50  0001 C CNN
+F 1 "GND" H 2755 4827 50  0000 C CNN
+F 2 "" H 2750 5000 50  0001 C CNN
+F 3 "" H 2750 5000 50  0001 C CNN
+	1    2750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4300 2750 4200
+Wire Wire Line
+	2750 4900 2750 5000
+$Comp
+L Device:R_Small R11
+U 1 1 61C90AFC
+P 3750 1350
+F 0 "R11" H 3691 1304 50  0000 R CNN
+F 1 "5k" H 3691 1395 50  0000 R CNN
+F 2 "" H 3750 1350 50  0001 C CNN
+F 3 "~" H 3750 1350 50  0001 C CNN
+	1    3750 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 1250 3750 1150
+Wire Wire Line
+	3200 1150 3200 1600
+Connection ~ 3200 1600
+Text GLabel 4000 1600 1    50   Input ~ 0
+BUF
+Wire Wire Line
+	4900 2100 4900 2150
+$Comp
+L Device:R_Small R7
+U 1 1 61C8BD2F
+P 4900 2000
+F 0 "R7" H 4841 1954 50  0000 R CNN
+F 1 "1meg" H 4841 2045 50  0000 R CNN
+F 2 "" H 4900 2000 50  0001 C CNN
+F 3 "~" H 4900 2000 50  0001 C CNN
+	1    4900 2000
+	-1   0    0    1   
+$EndComp
+Text GLabel 4900 2150 3    50   Input ~ 0
+VREF
+Wire Wire Line
+	4600 1600 4350 1600
+$Comp
+L Device:C_Small C3
+U 1 1 61CBD389
+P 3400 1150
+F 0 "C3" V 3171 1150 50  0000 C CNN
+F 1 "2.2uF" V 3262 1150 50  0000 C CNN
+F 2 "" H 3400 1150 50  0001 C CNN
+F 3 "~" H 3400 1150 50  0001 C CNN
+	1    3400 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 1150 3300 1150
+Wire Wire Line
+	3500 1150 3750 1150
+$Comp
+L power:GND #PWR04
+U 1 1 61CCAC0F
+P 3750 2200
+F 0 "#PWR04" H 3750 1950 50  0001 C CNN
+F 1 "GND" H 3755 2027 50  0000 C CNN
+F 2 "" H 3750 2200 50  0001 C CNN
+F 3 "" H 3750 2200 50  0001 C CNN
+	1    3750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1450 3750 1600
+$Comp
+L Device:C_Small C4
+U 1 1 61CCE5B3
+P 4150 1600
+F 0 "C4" V 3921 1600 50  0000 C CNN
+F 1 "2.2uF" V 4012 1600 50  0000 C CNN
+F 2 "" H 4150 1600 50  0001 C CNN
+F 3 "~" H 4150 1600 50  0001 C CNN
+	1    4150 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 1600 4050 1600
+Connection ~ 3750 1600
+Wire Wire Line
+	3750 1600 3750 1900
+Wire Wire Line
+	4350 1850 4350 1900
+$Comp
+L Device:R_Small R12
+U 1 1 61CD0D6E
+P 4350 1750
+F 0 "R12" H 4291 1704 50  0000 R CNN
+F 1 "1meg" H 4291 1795 50  0000 R CNN
+F 2 "" H 4350 1750 50  0001 C CNN
+F 3 "~" H 4350 1750 50  0001 C CNN
+	1    4350 1750
+	-1   0    0    1   
+$EndComp
+Text GLabel 4350 1900 3    50   Input ~ 0
+VREF
+Wire Wire Line
+	4350 1650 4350 1600
+Connection ~ 4350 1600
+Wire Wire Line
+	4350 1600 4250 1600
+$Comp
+L Device:C_Small C5
+U 1 1 61CD2D60
+P 5300 950
+F 0 "C5" V 5071 950 50  0000 C CNN
+F 1 "10pF" V 5162 950 50  0000 C CNN
+F 2 "" H 5300 950 50  0001 C CNN
+F 3 "~" H 5300 950 50  0001 C CNN
+	1    5300 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 950  5700 950 
+Wire Wire Line
+	5700 950  5700 1300
+Connection ~ 5700 1300
+Wire Wire Line
+	5200 950  4900 950 
+Wire Wire Line
+	4900 950  4900 1300
+Connection ~ 4900 1300
+$EndSCHEMATC
